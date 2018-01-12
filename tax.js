@@ -20,15 +20,12 @@ function calcTax(amount) {
     hash.some(function(val, key) {
         console.log(val.amount);
         if (amount > val.amount * 10000) {
-            console.log("percent", val.percent);
             tax = amount * (val.percent * 0.01);
             return true;
         }
     });
     return tax;
 }
-
-console.log(calcTax(4001 * 10000));
 
 $(document).ready(function(){
     $("#amount").keyup(function() {
