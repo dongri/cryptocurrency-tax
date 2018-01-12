@@ -1,0 +1,23 @@
+html {
+    background: white;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+input.amount {
+    font-size: 30px;
+    outline: 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px #AAA solid;
+}
+
+div.tax {
+    font-size: 40px;
+    margin: 20px;
+}
