@@ -17,20 +17,25 @@ hash.sort(function(a,b){
 
 function calcTax(amount) {
     var tax = 0;
+    var formula = "";
     hash.some(function(val, key) {
         console.log(val.amount);
         if (amount > val.amount * 10000) {
             tax = amount * (val.percent * 0.01);
+            formula = amount + " x " + val.percent + "% = " + tax;
             return true;
         }
     });
-    return tax;
+    return [tax, formula];
 }
 
 $(document).ready(function(){
     $("#amount").keyup(function() {
         amount = $(this).val();
-        tax = calcTax(amount);
+        result = calcTax(amount);
+        tax = result[0];
+        formula = result[1];
         $("#tax").html("￥"+numeral(tax).format('0,0'));
+        $("#formula").html(formula);
     });
 });
