@@ -1,12 +1,12 @@
 
 var hash = [
-    {amount: 0,    percent: 5},
-    {amount: 195,  percent: 10},
-    {amount: 330,  percent: 20},
-    {amount: 695,  percent: 23},
-    {amount: 900,  percent: 33},
-    {amount: 1800, percent: 40},
-    {amount: 4000, percent: 45}
+    {amount: 0,    percent: 15},
+    {amount: 195,  percent: 20},
+    {amount: 330,  percent: 30},
+    {amount: 695,  percent: 33},
+    {amount: 900,  percent: 43},
+    {amount: 1800, percent: 47},
+    {amount: 4000, percent: 51}
 ]
 
 hash.sort(function(a,b){
